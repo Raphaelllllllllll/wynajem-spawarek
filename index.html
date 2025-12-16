@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wynajem Spawarek | Lorch Saprom S5 & Lorch TIG V27</title>
+    <meta name="description" content="Profesjonalny wynajem spawarek Lorch Saprom S5 oraz Lorch TIG V27. Najlepszy sprzęt, elastyczne terminy, atrakcyjne ceny. Skontaktuj się z nami!">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        body { line-height: 1.6; color: #333; background: #f7f7f7; }
+
+        header {
+            background: url('hero-spawarki.jpg') center/cover no-repeat;
+            height: 450px;
+            position: relative;
+            text-align: center;
+            color: #fff;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        header .hero-content {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        header h1 { font-size: 3rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; }
+
+        nav {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover { color: #fbc531; }
+
+        .container { width: 90%; margin: 40px auto; }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .intro h2 { font-size: 2.5rem; color: #222; margin-bottom: 15px; }
+        .intro p { font-size: 1.1rem; color: #555; }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(0,0,0,0.15);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card .info {
+            padding: 20px;
+        }
+        .product-card h3 { font-size: 1.8rem; margin-bottom: 10px; }
+        .product-card p { color: #555; margin-bottom: 15px; }
+
+        .btn {
+            display: inline-block;
+            background: #e84118;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background .3s ease;
+        }
+        .btn:hover { background: #c23616; }
+
+        .contact {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            margin: 60px 0;
+        }
+        .contact h2 { margin-bottom: 20px; }
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        .contact form button {
+            background: #2980b9;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .contact form button:hover { background: #1f5f8b; }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero-content">
+            <h1>Wynajem Spawarek Profesjonalnych</h1>
+            <p>Lorch Saprom S5 & Lorch TIG V27 – sprzęt gotowy do pracy</p>
+            <a href="#oferta" class="btn">Zobacz ofertę</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#oferta">Oferta</a>
+        <a href="#o-nas">O nas</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <section id="oferta" class="container">
+        <div class="intro">
+            <h2>Nasze spawarki na wynajem</h2>
+            <p>Oferujemy wyłącznie sprawdzony sprzęt renomowanej marki Lorch – gotowy do natychmiastowego użycia.</p>
+        </div>
+
+        <div class="products">
+            <div class="product-card">
+                <img src="lorch-saprom-s5.jpg" alt="Lorch Saprom S5">
+                <div class="info">
+                    <h3>Lorch Saprom S5</h3>
+                    <p>Uniwersalna spawarka z regulacją parametrów, idealna do spawania MIG/MAG. Stabilna wydajność nawet przy długim obciążeniu.</p>
+                    <a href="#kontakt" class="btn">Zapytaj o wynajem</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="lorch-tig-v27.jpg" alt="Lorch TIG V27">
+                <div class="info">
+                    <h3>Lorch TIG V27</h3>
+                    <p>Profesjonalny zestaw TIG z chłodzonym uchwytem – idealny do precyzyjnych spoin i pracy z cienkimi materiałami.</p>
+                    <a href="#kontakt" class="btn">Zapytaj o wynajem</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="o-nas" class="container">
+        <h2 style="text-align:center; margin-bottom: 25px;">O nas</h2>
+        <p style="max-width: 900px; margin: auto; font-size: 1.1rem; color: #444;">
+            Jesteśmy firmą z wieloletnim doświadczeniem w branży spawalniczej. Oferujemy wynajem sprzętu spawalniczego zarówno dla firm jak i klientów indywidualnych. Naszym celem jest zapewnienie najwyższej jakości urządzeń, elastycznych terminów oraz profesjonalnego wsparcia technicznego.
+        </p>
+    </section>
+
+    <section id="kontakt" class="container contact">
+        <h2>Skontaktuj się z nami</h2>
+        <form action="mailto:twojemail@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Twoje imię i nazwisko" required>
+            <input type="email" name="email" placeholder="Twój e-mail" required>
+            <input type="text" name="phone" placeholder="Telefon">
+            <textarea name="message" rows="5" placeholder="Wiadomość: zapytanie o wynajem, termin, cenę..." required></textarea>
+            <button type="submit">Wyślij zapytanie</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Wynajem Spawarek | Lorch Saprom S5 & Lorch TIG V27 – Wszelkie prawa zastrzeżone
+    </footer>
+
+</body>
+</html>
